@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  /* You could use dotted too */
+  border: 3px solid rgb(139, 139, 139);
+  border-radius: 50%;
+  border-top: 3px solid blue;
+  margin-top: 20%;
+  animation: spin 1s linear infinite;
+}
+
+/* The animation itself */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
